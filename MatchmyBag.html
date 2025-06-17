@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MatchmyBag </title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>MatchmyBag</h1>
+    <p>
+        Welcome to MatchmyBag, your personal fashion advisor!
+        This web page helps you choose the perfect bag to match 
+        your outfit using simple rules.
+    </p>
+    <form id="fashion-bag-matcher">
+        <label for="outfit"> Your outfit choice:</label>
+        <input type="text" id="outfit" placeholder="e.g., official, smart casual, sporty" required />
+
+        <label for="bag-type">Choose bag type:</label>
+        <select id="bag-type">
+            <option value="handbag">Handbag</option>
+            <option value="backpack">Backpack</option>
+            <option value="clutch">Clutch</option>
+            <option value="tote">Tote</option>
+            <option value="crossbody">Crossbody</option>
+            <option value="duffel">Duffel</option>
+            <option value="shoulder bag">Shoulder bag</option>
+        </select>
+        <button type="submit">Match My Bag</button>
+    </form>
+    <div id="result"></div>
+    <script>
+        document.getElementById("fashion-bag-matcher").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const outfit = document.getElementById("outfit").value.toLowerCase();
+            const bagType = document.getElementById("bag-type").value;
+            let resultText = "";
+
+            if (outfit.includes("official") || outfit.includes("formal") || outfit.includes("business")) {
+                resultText = `A clutch will make you look stylish and elegant!`;
+            } else if (outfit.includes("smart casual")) {
+                resultText = `A shoulder bag or hand bag will complement your smart casual outfit perfectly!`;
+            } else if (outfit.includes("sporty")) {
+                resultText = `A backpack or duffel bag is ideal for a sporty look!`;
+            } else if (outfit.includes("casual")) {
+                resultText = `A crossbody bag will fit perfectly!`;
+            } else if (outfit.includes("dinner") || outfit.includes("evening")) {
+                resultText = `A clutch or purse will be the right fit!`;
+            } else if (outfit.includes("movie date")) {
+                resultText = `A hand bag or crossbody bag will be comfortable for you!`;
+            } else if (outfit.includes("school day")) {
+                resultText = `A tote bag or a backpack will do!`;
+            } else {
+                resultText = `Sorry, we couldn't find a matching bag for your outfit. Please try again with different keywords.`;
+            }
+
+            document.getElementById("result").innerText = resultText;
+        });
+    </script>
+</body>
+</html>
