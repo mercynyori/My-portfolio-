@@ -181,10 +181,11 @@ button[type="submit"]:hover {
   will-change: transform, opacity;
 }
 .floating-shape.shape1 {
-  width: 90px; height: 90px;
+  width: 20px; height: 20px;
   background: #a1c4fd;
   left: 10vw; top: 70vh;
   animation-delay: 0s;
+
 }
 .floating-shape.shape2 {
   width: 60px; height: 60px;
