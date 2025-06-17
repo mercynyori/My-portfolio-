@@ -180,7 +180,7 @@ button[type="submit"]:hover {
   animation: float-shape 18s linear infinite;
   will-change: transform, opacity;
 }
-.floating-shhape.shape1 {
+.floating-shape.shape1 {
   width: 90px; height: 90px;
   background: #a1c4fd;
   left: 10vw; top: 70vh;
