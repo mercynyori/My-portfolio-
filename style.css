@@ -99,7 +99,7 @@ button[type="submit"]:hover {
 }
 
 /* Hero Section */
- .hero {
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,23 +119,23 @@ button[type="submit"]:hover {
   font-weight: 700;
 }
 .intro {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #333;
-  margin: 12px 0 22px 0;
+  margin: 10px 0 18px 0;
   text-align: center;
 }
 .btn {
   display: inline-block;
   background: #6ea3ed;
   color: #fff;
-  padding: 12px 32px;
+  padding: 10px 28px;
   border-radius: 8px;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   transition: background 0.2s, color 0.2s;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 .btn:hover {
   background: #357ab8;
@@ -164,66 +164,6 @@ button[type="submit"]:hover {
   background: #6ea3ed;
   color: #fff;
 }
-/* Floating Shapes Animated Background */
-.floating-shapes-bg {
-  position: fixed;
-  top: 0; left: 0; width: 100vw; height: 100vh;
-  pointer-events: none;
-  z-index: 0;
-  overflow: hidden;
-}
-.floating-shape {
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0.35;
-  filter: blur(1px);
-  animation: float-shape 18s linear infinite;
-  will-change: transform, opacity;
-}
-.floating-shape.shape1 {
-  width: 20px; height: 20px;
-  background: #a1c4fd;
-  left: 10vw; top: 70vh;
-  animation-delay: 0s;
-
-}
-.floating-shape.shape2 {
-  width: 60px; height: 60px;
-  background: #fbc2eb;
-  left: 80vw; top: 80vh;
-  animation-delay: 3s;
-}
-.floating-shape.shape3 {
-  width: 120px; height: 120px;
-  background: #fad0c4;
-  left: 50vw; top: 90vh;
-  animation-delay: 6s;
-}
-.floating-shape.shape4 {
-  width: 70px; height: 70px;
-  background: #ffd6e0;
-  left: 30vw; top: 85vh;
-  animation-delay: 9s;
-}
-.floating-shape.shape5 {
-  width: 100px; height: 100px;
-  background: #a18cd1;
-  left: 65vw; top: 95vh;
-  animation-delay: 12s;
-}
-@keyframes float-shape {
-  0% {
-    transform: translateY(0) scale(1) rotate(0deg);
-    opacity: 0.35;
-  }
-  60% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(-110vh) scale(1.2) rotate(360deg);
-    opacity: 0.15;
-  }
-}
 
 /* Ensure content is above shapes */
 body > *:not(.floating-shapes-bg) {
@@ -247,11 +187,12 @@ body > *:not(.floating-shapes-bg) {
     gap: 16px;
   }
 }
-profile-img {
+
+.profile-img {
   width: 80px;
-  height: 820px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 14px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
