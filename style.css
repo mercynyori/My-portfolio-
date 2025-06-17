@@ -164,7 +164,71 @@ button[type="submit"]:hover {
   background: #6ea3ed;
   color: #fff;
 }
+/* Floating Shapes Animated Background */
+.floating-shapes-bg {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.floating-shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.35;
+  filter: blur(1px);
+  animation: float-shape 18s linear infinite;
+  will-change: transform, opacity;
+}
+.floating-shhape.shape1 {
+  width: 90px; height: 90px;
+  background: #a1c4fd;
+  left: 10vw; top: 70vh;
+  animation-delay: 0s;
+}
+.floating-shape.shape2 {
+  width: 60px; height: 60px;
+  background: #fbc2eb;
+  left: 80vw; top: 80vh;
+  animation-delay: 3s;
+}
+.floating-shape.shape3 {
+  width: 120px; height: 120px;
+  background: #fad0c4;
+  left: 50vw; top: 90vh;
+  animation-delay: 6s;
+}
+.floating-shape.shape4 {
+  width: 70px; height: 70px;
+  background: #ffd6e0;
+  left: 30vw; top: 85vh;
+  animation-delay: 9s;
+}
+.floating-shape.shape5 {
+  width: 100px; height: 100px;
+  background: #a18cd1;
+  left: 65vw; top: 95vh;
+  animation-delay: 12s;
+}
+@keyframes float-shape {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    opacity: 0.35;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-110vh) scale(1.2) rotate(360deg);
+    opacity: 0.15;
+  }
+}
 
+/* Ensure content is above shapes */
+body > *:not(.floating-shapes-bg) {
+  position: relative;
+  z-index: 1;
+}
 /* Responsive Design */
 @media (max-width: 600px) {
   .hero {
