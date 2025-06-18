@@ -178,6 +178,14 @@ body > *:not(.floating-shapes-bg) {
   position: relative;
   z-index: 1;
 }
+* Highlighted Text */
+.highlight {
+  background: #ffe082;
+  color: #1a237e;
+  font-weight: bold;
+  padding: 0 3px;
+  border-radius: 3px;
+}
 /* Responsive Design */
 @media (max-width: 600px) {
   .hero {
