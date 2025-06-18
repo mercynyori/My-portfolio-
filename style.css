@@ -186,6 +186,47 @@ body > *:not(.floating-shapes-bg) {
   padding: 0 3px;
   border-radius: 3px;
 }
+/* Project Cards */
+.project {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  padding: 32px 28px 24px 28px;
+  margin: 32px auto 32px auto;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.project:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+  transform: translateY(-4px) scale(1.02);
+}
+.project h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  color: #1a237e;
+}
+.project p {
+  margin: 8px 0 8px 0;
+  text-align: center;
+}
+.project a {
+  margin: 8px 0 0 0;
+  color: #357ab8;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+}
+.project a:hover {
+  color: #fff;
+  background: #357ab8;
+  border-radius: 6px;
+  padding: 6px 0;
+}
 /* Responsive Design */
 @media (max-width: 600px) {
   .hero {
