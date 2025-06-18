@@ -229,7 +229,6 @@ body > *:not(.floating-shapes-bg) {
 }
 /* Contact Section */
 #contact {
-  background: #e0e7ff;
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(30,64,175,0.10);
   padding: 32px 28px 24px 28px;
