@@ -229,7 +229,7 @@ body > *:not(.floating-shapes-bg) {
 }
 /* Contact Section */
 #contact {
-   color: #3c62e1
+  color: #4069f0
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(30,64,175,0.10);
   padding: 32px 28px 24px 28px;
@@ -237,7 +237,7 @@ body > *:not(.floating-shapes-bg) {
   max-width: 500px;
 }
 #contact h2 {
-  color: #1a237e;
+  color: #5b67e9;
   text-align: center;
 }
 #contact ul.contact-links {
