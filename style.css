@@ -227,6 +227,46 @@ body > *:not(.floating-shapes-bg) {
   border-radius: 6px;
   padding: 6px 0;
 }
+/* Contact Section */
+#contact {
+  background: #e0e7ff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(30,64,175,0.10);
+  padding: 32px 28px 24px 28px;
+  margin: 36px auto 36px auto;
+  max-width: 500px;
+}
+#contact h2 {
+  color: #1a237e;
+  text-align: center;
+}
+#contact ul.contact-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+  width: 100%;
+}
+#contact ul.contact-links li {
+  margin: 10px 0;
+  font-size: 1.08rem;
+  text-align: center;
+}
+#contact ul.contact-links a {
+  color: #357ab8;
+  text-decoration: none;
+  font-weight: 500;
+}
+#contact ul.contact-links a:hover {
+  color: #fff;
+  background: #357ab8;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+#contact form.contact-form {
+  width: 100%;
+  margin-top: 10px;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
   .hero {
