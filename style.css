@@ -177,8 +177,8 @@ button[type="submit"]:hover {
 
 /* Highlighted Text */
 .highlight {
-  background: #ffe082;
-  color: #1a237e;
+ background: #5d1df0;
+   color: #616ce7;
   font-weight: bold;
   padding: 0 3px;
   border-radius: 3px;
@@ -228,7 +228,7 @@ button[type="submit"]:hover {
 
 /* Contact Section */
 #contact {
-  background: none;
+  background: #1c90e3;
   border: 2px solid #6ea3ed;
   border-radius: 14px;
   box-shadow: none;
@@ -261,7 +261,7 @@ button[type="submit"]:hover {
 }
 #contact ul.contact-links a:hover {
   color: #1a237e;
-  background: none;
+  background: #4269ea;
   border-radius: 0;
   padding: 0;
 }
@@ -280,9 +280,9 @@ button[type="submit"]:hover {
 #contact form.contact-form input,
 #contact form.contact-form textarea,
 #contact form.contact-form select {
+  background: #4761e4;
  border: 1.5px solid #437ac8;
-  border: 1.5px solid #b3c6e0;
-  color: #1a237e;
+  color: #5b67eb;
   border-radius: 7px;
   padding: 10px;
   font-size: 1rem;
@@ -298,7 +298,7 @@ button[type="submit"]:hover {
 }
 #contact form.contact-form button[type="submit"] {
   background: #357ab8;
-  color: #fff;
+  color: #3f33e1;
   border: none;
   padding: 10px 0;
   border-radius: 7px;
